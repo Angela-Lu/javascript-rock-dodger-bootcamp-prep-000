@@ -130,6 +130,7 @@ function endGame() {
 }
 
 function moveDodger(e) {
+<<<<<<< HEAD
   if ([LEFT_ARROW, RIGHT_ARROW].indexOf(e.which) > -1) {
     e.preventDefault()
     e.stopPropagation()
@@ -141,6 +142,16 @@ function moveDodger(e) {
     moveDodgerRight()
   }
 }
+=======
+  document.addEventListener('keydown', function(e) {
+  if (e.which === 37) {
+    moveDodgerLeft()
+  }
+    if (e.which === 39) {
+    moveDodgerRight()
+    }
+  })
+>>>>>>> 6f4ae54bc970f0c1cf0d6a3edc69cf219c5225ea
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
